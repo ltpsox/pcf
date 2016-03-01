@@ -1,4 +1,4 @@
-docker_image 'amara/uploader' do
+docker_image 'uploader' do
   action :pull
   notifies :redeploy, 'docker_container[uploader]', :immediately
 end
